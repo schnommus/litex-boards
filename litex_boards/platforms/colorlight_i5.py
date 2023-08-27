@@ -27,8 +27,8 @@ _io_v7_0 = [ # Documented by @smunaut
 
     # Serial
     ("serial", 0,
-        Subsignal("tx", Pins("J17")),
-        Subsignal("rx", Pins("H18")),
+        Subsignal("tx", Pins("J18")),
+        Subsignal("rx", Pins("P16")),
         IOStandard("LVCMOS33")
     ),
 
