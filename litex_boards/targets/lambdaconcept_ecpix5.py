@@ -202,9 +202,9 @@ class BaseSoC(SoCCore):
             ])
             # Video Terminal/Framebuffer.
             if with_video_terminal:
-                self.add_video_terminal(phy=self.videophy, timings="640x480@75Hz", clock_domain="init")
+                self.add_video_terminal(phy=self.videophy, timings="720x720@60Hz", clock_domain="init")
             if with_video_framebuffer:
-                self.add_video_framebuffer(phy=self.videophy, timings="640x480@75Hz", clock_domain="init")
+                self.add_video_framebuffer(phy=self.videophy, timings="720x720@60Hz", clock_domain="init")
 
         # Leds -------------------------------------------------------------------------------------
         if with_led_chaser:
